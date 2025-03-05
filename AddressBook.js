@@ -99,4 +99,9 @@ class AddressBook {
         }, { cityCounts: {}, stateCounts: {} });
     }
 
+    sortContactsByName() {
+        this.contacts.sort((a, b) => (a.firstName + a.lastName).localeCompare(b.firstName + b.lastName));
+    }
+
+
 }
