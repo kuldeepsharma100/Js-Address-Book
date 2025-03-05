@@ -64,4 +64,8 @@ class AddressBook {
             throw new Error("Contact not found.");
         }
     }
+
+    getContactCount() {
+        return this.contacts.reduce(count => count + 1, 0);
+    }
 }
