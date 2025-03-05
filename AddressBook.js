@@ -77,4 +77,8 @@ class AddressBook {
         this.contacts.push(contact);
     }
 
+    searchByCityOrState(location) {
+        return this.contacts.filter(contact => contact.city === location || contact.state === location);
+    }
+
 }
